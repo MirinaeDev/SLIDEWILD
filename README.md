@@ -16,7 +16,7 @@ All in-game menus, course names, instructions and award graphics are in English.
 | Platform | Renderer | Status |
 | --- | --- | --- |
 | Windows x64 | Direct3D 12 / DXIL | Locally built and tested |
-| Mac Apple Silicon | Metal / MSL | Port prepared; native Mac validation still required |
+| Mac Apple Silicon | Metal / MSL | ARM64 build and CPU tests verified in CI; GPU validation still required |
 
 The initial Mac deployment target is macOS 11 ARM64; this minimum has not yet
 been verified on hardware. Intel Macs and Linux are not supported. Test builds

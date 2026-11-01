@@ -1,8 +1,8 @@
 SLIDEWILD 0.35 — APPLE SILICON BUILD GUIDE
 
 This source kit contains the ARM64 / Metal port, generated Metal shaders,
-runtime artwork, music, and pinned SDL3 3.4.18 sources. It has not yet been
-compiled or run on a real Mac here. Native validation must be done on your Mac.
+runtime artwork, music, and pinned SDL3 3.4.18 sources. ARM64 compilation and CPU
+tests passed on a GitHub Mac runner. Native GPU/audio validation is still required.
 macOS 11 is an initial deployment target, not a verified minimum requirement.
 
 1. PREPARE

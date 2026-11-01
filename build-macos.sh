@@ -21,7 +21,7 @@ cmake -S "$ROOT" -B "$BUILD" -G "Unix Makefiles" \
 cmake --build "$BUILD" --parallel "${BUILD_JOBS:-4}"
 ctest --test-dir "$BUILD" --output-on-failure
 APP="$BUILD/Slidewild.app"
-lipo -verify_arch arm64 "$APP/Contents/MacOS/Slidewild"
+lipo "$APP/Contents/MacOS/Slidewild" -verify_arch arm64
 otool -L "$APP/Contents/MacOS/Slidewild"
 if otool -L "$APP/Contents/MacOS/Slidewild" | grep -Eq '/opt/homebrew|/usr/local|@rpath/.*SDL'; then
   echo "Unexpected external library: the application is not self-contained." >&2; exit 1
