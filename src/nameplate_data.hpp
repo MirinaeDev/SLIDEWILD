@@ -1,0 +1,10 @@
+#pragma once
+#include "sprite_data.hpp"
+namespace dh {
+inline constexpr SpriteRect nameplateRects[4]={
+{0.16601562f,0.03222656f,0.84179688f,0.25585938f},
+{0.17187500f,0.26953125f,0.83854167f,0.50976562f},
+{0.13216146f,0.50976562f,0.87174479f,0.75683594f},
+{0.17187500f,0.75683594f,0.82096354f,0.97949219f},
+};
+}

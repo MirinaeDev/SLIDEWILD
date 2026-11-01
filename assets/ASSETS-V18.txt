@@ -1,0 +1,30 @@
+DOWNHILL RUSH - ASSETS V18
+Created using the built-in imagegen tool, not the API/CLI fallback.
+72 decor motifs in 12 native transparent atlases; 5 panoramas; 3 material/facade sheets.
+PNG sources are unchanged. Runtime crops use UV coordinates and preserve native aspect.
+Exact authoring prompts: assets/prompts-v18.json
+
+Assets:
+assets/biome-ground-v18.png | 1254x1254 | RGB
+assets/desert-details-v18.png | 1536x1024 | RGBA
+assets/desert-habitat-v18.png | 1536x1024 | RGBA
+assets/desert-panorama-v18.png | 2171x724 | RGB
+assets/desert-props-v18.png | 1536x1024 | RGBA
+assets/sandstone-v18.png | 1254x1254 | RGB
+assets/scotland-details-v18.png | 1536x1024 | RGBA
+assets/scotland-habitat-v18.png | 1536x1024 | RGBA
+assets/scotland-panorama-v18.png | 2167x726 | RGB
+assets/scotland-props-v18.png | 1536x1024 | RGBA
+assets/tropical-details-v18.png | 1536x1024 | RGBA
+assets/tropical-habitat-v18.png | 1536x1024 | RGBA
+assets/tropical-panorama-v18.png | 2172x724 | RGB
+assets/tropical-props-v18.png | 1536x1024 | RGBA
+assets/tropical-storm-v18.png | 2172x724 | RGB
+assets/urban-details-v18.png | 1536x1024 | RGBA
+assets/urban-facades-v18.png | 1536x1024 | RGB
+assets/urban-habitat-v18.png | 1536x1024 | RGBA
+assets/urban-panorama-v18.png | 2171x724 | RGB
+assets/urban-props-v18.png | 1536x1024 | RGBA
+
+Native engine captures: build/captures/pass18-final-*.png
+Validation: build/pass18-final-validation.log

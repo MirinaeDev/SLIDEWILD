@@ -1,0 +1,11 @@
+SLIDEWILD — MAC PORT STATUS
+
+Implemented: Metal/MSL backend selection on Apple Silicon, generated shaders
+with SHA256 checks, ARM64 app bundle with resources, pinned static SDL3,
+UTF-8 paths, build scripts and native test scripts.
+
+See MACOS-BUILD.txt for commands. Compilation and Apple GPU rendering still
+need validation on a real Mac. macOS 11 is an initial target, not a verified
+minimum. Ad hoc signing is for local tests; Developer ID and notarization are
+still required for smooth public Mac distribution.
+Supported targets: Windows x64 and Mac Apple Silicon only.

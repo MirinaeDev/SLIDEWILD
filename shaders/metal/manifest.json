@@ -1,0 +1,13 @@
+{
+  "source_sha256": "5e000c7afc603a8b8b31987796f208fa32f236390316b15cc0c3d903f1a1572e",
+  "spirv_cross_revision": "300681bbcb8365a8d1eacdacdbdd0249bbf1d6b1",
+  "msl_version": "2.1",
+  "files": {
+    "world.vs.msl": "ca2157a1eb3a62e698d3b938f1e4fa98f645c8e064fca355f969f47ed4efee97",
+    "world.vs.json": "efa1131094406ea1aac1324466cf54f2f439417a161f90f7133cfd28eb4aa9a2",
+    "world.ps.msl": "20e6693dd285cb105df9c83be0822958e761b628f61600de0611d02ab08bf203",
+    "world.ps.json": "8a798ef96e88e4609dc229adb87cdf72e39b8a62d6764efe74f0c47a623dd077",
+    "world.shadow.msl": "1b758ced6e41b57a376a526864dba3cb3e9f64d64220d4cb265138c2c6e93267",
+    "world.shadow.json": "d6bec3ad9692cb5b83fa23f2bd55a819c7f5f4417f06059c042875b92f674a2c"
+  }
+}

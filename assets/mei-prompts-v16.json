@@ -1,0 +1,18 @@
+[
+  {
+    "name": "rig-mei-v16",
+    "refs": [
+      "F:\\downhil\\assets\\rider-movement-v2.png",
+      "F:\\downhil\\assets\\select-mei-v16.png"
+    ],
+    "prompt": "Use case: identity-preserve. EDIT Image 1. Keep the exact SIX original sprite silhouettes, six poses, camera perspective, body proportions, foreshortened longboard orientations and foot contacts, pixel art style, exact original 1536x1024 3-column 2-row arrangement and empty spacing. Image 2 gives only the new character appearance: MEI, adult East Asian woman with chin-length straight black bob and straight fringe, cream open-face skate helmet, raspberry red loose windbreaker with cream sleeves, black skate shorts, plum knee pads and tall socks, cream shoes, black slide gloves. Natural wood longboard with lavender wheels. Replace the white-shirt rider with MEI in all six original poses, same crouched racing anatomy and relative size of body and board. Top row neutral rear crouch, right carve with hand above ground, rear counterbalance. Bottom row LEFT-hand-down sliding with left glove touching ground, RIGHT-hand-down sliding with right glove touching ground, aerodynamic tuck with arms behind back. DO NOT redraw the poses, DO NOT stand up, DO NOT copy standing poses from image 2, DO NOT enlarge hips or head. Preserve pixel clusters, simple elegant painted shading and proportions from Image 1, no fine grain or gloss. All cells preserve original positions and scale. Actual transparent background, no extra elements, no labels, no shadow, no text."
+  },
+  {
+    "name": "fall-mei-v16",
+    "refs": [
+      "F:\\downhil\\assets\\fall-v1.png",
+      "F:\\downhil\\assets\\select-mei-v16.png"
+    ],
+    "prompt": "Use case: identity-preserve. EDIT Image 1. Replace the white-shirt male skater with MEI, adult East Asian woman with chin-length straight black bob and straight fringe, cream open-face skate helmet, raspberry red loose windbreaker with cream sleeves, black skate shorts, plum knee pads and tall socks, cream shoes, black slide gloves. Natural wood longboard with lavender wheels. Image 2 is only the character/outfit reference. Keep exactly the three falling/sliding action poses of Image 1, original proportions, original pose silhouettes, placement and perspective. Exact same horizontal three sprite atlas, 3:1 canvas, three separate complete figures with empty gaps, actual transparent background. First pose tipping sideways, second curled rolling on asphalt, third lying side sliding. Preserve human anatomy and painted pixel art shading of original image. No board, no floor, no shadows, no new scene or typography. No changes in pose composition, no enlarged body parts."
+  }
+]

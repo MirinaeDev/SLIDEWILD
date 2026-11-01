@@ -1,0 +1,6 @@
+{
+ "tool": "built-in image_gen",
+ "asset": "valley-layer-v2.png",
+ "reference": "valley-layer-v1.png",
+ "prompt": "Edit this exact transparent landscape layer for the same alpine pixel-art game. Preserve its full panoramic composition, silhouette, lake and village positions, and transparent sky. Change only the rendering of the hills: replace the large smooth pale lavender hill surfaces along the entire upper skyline with richly textured dark muted purple-green evergreen woodland, rocky outcrops and tiny irregular meadow patches. Every hillside should have fine readable angular pixel clusters of vegetation, no blank smooth gradients, no airbrush, no blur. Keep lighter blue atmospheric separation for the farthest hill, but add visible fine texture there too. Overall subdued dusk colors, less milky lavender, more muted forest greens and blue-purple stone. Preserve water and villages. Crisp detailed painterly PIXEL ART, not photography. Fully transparent above the skyline, no new sky, no text, no foreground road or large trees. Keep 3:1 panoramic ratio."
+}

@@ -1,0 +1,17 @@
+DOWNHILL RUSH - ASSETS V19
+Created with the built-in imagegen tool (not API/CLI fallback).
+Exact prompts: assets/prompts-v19.json
+Native transparent PNG sources are preserved without image edits.
+Runtime UV bounds measured by tools/measure_details.py; lossless RGBA serialization.
+
+assets/tropical-understory-v19.png - 1536x1024 RGBA
+Six low groundcover patches: philodendron/ferns, seagrape seedlings, fan palms/coral,
+caladium/heliconia, creeping vines, beach sedges.
+
+assets/scotland-understory-v19.png - 1536x1024 RGBA
+Six low groundcover patches: purple heather/moss, wet sedges/slate, bracken/clover,
+gorse/heather, thistles/grasses, bilberry/moss.
+
+assets/longboard-fall-v19.png - 1536x1024 RGBA
+Six drawn detached-board poses: bounce, side roll, underside, edge roll,
+two settled orientations. Shared pixels/metre scale, native source proportions.

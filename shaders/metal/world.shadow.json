@@ -1,0 +1,116 @@
+{
+    "entryPoints" : [
+        {
+            "name" : "shadow_ps",
+            "mode" : "frag"
+        }
+    ],
+    "inputs" : [
+        {
+            "type" : "vec3",
+            "name" : "in.var.TEXCOORD0",
+            "location" : 0
+        },
+        {
+            "type" : "vec3",
+            "name" : "in.var.TEXCOORD1",
+            "location" : 1
+        },
+        {
+            "type" : "vec3",
+            "name" : "in.var.TEXCOORD2",
+            "location" : 2
+        },
+        {
+            "type" : "vec3",
+            "name" : "in.var.TEXCOORD3",
+            "location" : 3
+        },
+        {
+            "type" : "vec2",
+            "name" : "in.var.TEXCOORD4",
+            "location" : 4
+        },
+        {
+            "type" : "float",
+            "name" : "in.var.TEXCOORD5",
+            "location" : 5
+        }
+    ],
+    "separate_images" : [
+        {
+            "type" : "texture2D",
+            "name" : "pineArt",
+            "set" : 2,
+            "binding" : 1
+        },
+        {
+            "type" : "texture2D",
+            "name" : "vegetationArt",
+            "set" : 2,
+            "binding" : 3
+        },
+        {
+            "type" : "texture2D",
+            "name" : "grassArt",
+            "set" : 2,
+            "binding" : 5
+        },
+        {
+            "type" : "texture2D",
+            "name" : "floraArt",
+            "set" : 2,
+            "binding" : 6
+        },
+        {
+            "type" : "texture2D",
+            "name" : "wallArt",
+            "set" : 2,
+            "binding" : 7
+        },
+        {
+            "type" : "texture2D",
+            "name" : "fallArt",
+            "set" : 2,
+            "binding" : 8
+        }
+    ],
+    "separate_samplers" : [
+        {
+            "type" : "sampler",
+            "name" : "pineSampler",
+            "set" : 2,
+            "binding" : 1
+        },
+        {
+            "type" : "sampler",
+            "name" : "vegetationSampler",
+            "set" : 2,
+            "binding" : 3
+        },
+        {
+            "type" : "sampler",
+            "name" : "grassSampler",
+            "set" : 2,
+            "binding" : 5
+        },
+        {
+            "type" : "sampler",
+            "name" : "floraSampler",
+            "set" : 2,
+            "binding" : 6
+        },
+        {
+            "type" : "sampler",
+            "name" : "wallSampler",
+            "set" : 2,
+            "binding" : 7
+        },
+        {
+            "type" : "sampler",
+            "name" : "fallSampler",
+            "set" : 2,
+            "binding" : 8
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "name": "intro-sky-v16",
+    "transparent_background": false,
+    "prompt": "Game art asset ONLY. Wide 16:9 painterly premium pixel art sunset sky plate for an alpine downhill arcade game. Orange golden horizon lower third, rose mauve upper sky, exquisite crisp irregular pixel clusters, layered orange wispy cloud bands, small bright pale golden sun at x82% y58%. No mountains, no land, no text, no people, no logos. This is the opaque FAR SKY layer of a multiplane parallax intro. Match reference sunset color atmosphere and pixel brush discipline. Fill whole canvas.",
+    "referenced_image_paths": [
+      "assets/target-reference.png"
+    ]
+  },
+  {
+    "name": "intro-peaks-v16",
+    "transparent_background": true,
+    "prompt": "One transparent game scenery layer, wide16:9. Match supplied alpine sunset painterly pixel art reference. ONLY distant blue violet snowy mountain chain spanning full width, summit tallest at x42% y25%, range silhouette low at edges around y55%. Below mountain peaks paint blue hazy slopes to BOTTOM edge opaque, top ABOVE skyline fully transparent. No sky no sun no lake no trees no text no people. Fine crisp controlled pixel clusters, snow catches peach evening light, spectacular natural asymmetric peaks. This is a separate middle-far parallax plate that overlays a sunset sky.",
+    "referenced_image_paths": [
+      "assets/target-reference.png"
+    ]
+  },
+  {
+    "name": "intro-valley-v16",
+    "transparent_background": true,
+    "prompt": "Transparent separate foreground-middle scenery plate for premium pixel art arcade intro, wide16:9. Alpine lake valley with tiny cozy lakeside town and warm gold windows, church tower at x40% y70%, lake flowing from right horizon y52% toward center foreground y85%, overlapping dark forested headlands. TOP HALF must be transparent empty to show mountain/sky layers behind; highest forested headland reaches y48%, bottom edge filled with detailed meadow and village rooftops. No sky no mountains no sun no text no humans. Warm violet blue lake with subtle peach sun reflection on right. Crisp sophisticated pixel brush clusters, extremely detailed but disciplined pixel art matching reference.",
+    "referenced_image_paths": [
+      "assets/target-reference.png"
+    ]
+  },
+  {
+    "name": "intro-foreground-v16",
+    "transparent_background": true,
+    "prompt": "Transparent near foreground layer for 16:9 alpine arcade game intro. Compose ONLY framing scenery: tall deep forest-green pines at extreme LEFT and RIGHT edges, detailed close cliff and meadow flowers in bottom LEFT corner, overlook stone wall curving across bottom 15%, tufts of grass and pink alpine wildflowers lower right, small metal guardrail edge right. Center 65% and sky must be entirely TRANSPARENT to see separate valley background. No person, no skateboard, no logo, no text, no scenery filling middle. Painterly premium crisp pixel art matching alpine sunset reference; warm rim highlights and cool shadow clusters, rich leaf and stone detail.",
+    "referenced_image_paths": [
+      "assets/target-reference.png"
+    ]
+  },
+  {
+    "name": "arcade-badges-v16",
+    "transparent_background": true,
+    "prompt": "Transparent sprite sheet of exactly THREE separate premium arcade achievement logos stacked vertically in three equally tall rows. Wide landscape 1536x1024 canvas. Each logo fits within its row with generous transparent margins and no overlap. Row1 text exactly PLEIN GAZ! with gold orange cream italic chunky lettering, blazing wheel and speed streaks teal edges. Row2 text exactly DRIFT PARFAIT! with icy cyan cream italic bold lettering, pink sparks and sweeping skid crescent. Row3 text exactly ARRIVEE! with cream yellow italic lettering, black-white checkered racing flags and pink ribbon. Retro90s high end arcade pixel art badges, dark navy thick outlines, stepped pixel edges, controlled handpainted shading, readable stylish distinct compact logos. No other words. Fully transparent background. Match typography attitude of reference DOWNHILL RUSH logo.",
+    "referenced_image_paths": [
+      "assets/logo-v15.png"
+    ]
+  },
+  {
+    "name": "fall-mei-v16",
+    "transparent_background": true,
+    "prompt": "Edit this 3-frame game sprite sheet preserving EXACT each original silhouette, pose, scale, location, original canvas aspect3:1 and transparent background. Replace outfit and visible identity with adult East Asian woman MEI in raspberry red jacket cream sleeves, black shorts, plum kneepads and socks, cream shoes, open cream helmet, chin length black bob blunt bangs. Use second reference for identity. Keep 3 falling poses mechanically IDENTICAL to original first sheet, no added board, no invented limbs, no rearrangement, no shadows, no text. Same detailed pixel art style as original.",
+    "referenced_image_paths": [
+      "assets/fall-v1.png",
+      "assets/select-mei-v16.png"
+    ]
+  }
+]

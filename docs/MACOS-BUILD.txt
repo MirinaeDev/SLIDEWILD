@@ -1,0 +1,60 @@
+SLIDEWILD 0.35 — APPLE SILICON BUILD GUIDE
+
+This source kit contains the ARM64 / Metal port, generated Metal shaders,
+runtime artwork, music, and pinned SDL3 3.4.18 sources. It has not yet been
+compiled or run on a real Mac here. Native validation must be done on your Mac.
+macOS 11 is an initial deployment target, not a verified minimum requirement.
+
+1. PREPARE
+Use an Apple Silicon Mac in a native Terminal, without Rosetta.
+Extract the complete kit into a writable user folder.
+Install Apple command line tools if necessary:
+    xcode-select --install
+Install CMake 3.24+; if you already use Homebrew:
+    brew install cmake
+The official CMake installer also works when cmake is in PATH.
+No separate SDL, Vulkan, DXC or SPIRV-Cross installation is needed on the Mac.
+SDL compiles the supplied MSL shaders through Metal at runtime.
+
+2. BUILD
+From the source folder:
+    bash build-macos.sh
+The script builds static SDL and the ARM64 app, runs CPU tests, and applies
+an ad hoc local signature. The initial build can take several minutes.
+To reduce memory use:
+    BUILD_JOBS=2 bash build-macos.sh
+Output:
+    build-macos/Slidewild.app
+Launch by double-clicking the app, or:
+    open build-macos/Slidewild.app
+Keep Resources inside the application bundle. Homebrew SDL is not required.
+
+3. NATIVE CHECKS
+    bash test-macos.sh
+Allow the test windows to finish. Checks cover all eight worlds, Metal,
+pause/abandon flow, dynamic vertex buffer growth, and a complete race.
+Captures and logs are in build-macos/native-check.
+Manually verify graphics, shadows, rain, sprites, speed effects, music,
+sound, controllers, fullscreen, Retina and sleep/resume.
+Automated CPU checks do not replace native GPU and gameplay validation.
+
+4. TROUBLESHOOTING
+Send build-macos/build.log for build failures, plus your Mac chip and macOS version.
+Normal runtime logs and captures are in:
+    ~/Library/Application Support/DamienMiri/Slidewild/
+Automated --smoke checks write to their working directory.
+
+5. DISTRIBUTION
+The ad hoc signature is for local testing. It is not Developer ID signing
+or notarization. Public distribution without Gatekeeper warnings requires
+those steps after native validation. Do not disable Gatekeeper as a workaround.
+The source ZIP is not a validated Mac application.
+
+SHADER MAINTENANCE
+Shared source: shaders/world.hlsl. Generated files: shaders/metal/.
+SHA256 fingerprints prevent builds with stale or modified shaders.
+After editing HLSL, regenerate with tools/generate_metal.py using DXC and
+SPIRV-Cross, and verify rendering on both GPU backends. The audits check entry
+points, texture slots, the 384-byte uniform layout, and vertex attributes.
+
+Damien Miri

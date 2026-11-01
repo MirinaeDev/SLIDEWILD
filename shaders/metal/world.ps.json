@@ -1,0 +1,335 @@
+{
+    "entryPoints" : [
+        {
+            "name" : "ps_main",
+            "mode" : "frag"
+        }
+    ],
+    "types" : {
+        "_11" : {
+            "name" : "type.ConstantBuffer.Params",
+            "members" : [
+                {
+                    "name" : "mvp",
+                    "type" : "mat4",
+                    "offset" : 0,
+                    "matrix_stride" : 16
+                },
+                {
+                    "name" : "eye",
+                    "type" : "vec4",
+                    "offset" : 64
+                },
+                {
+                    "name" : "weather",
+                    "type" : "vec4",
+                    "offset" : 80
+                },
+                {
+                    "name" : "camera",
+                    "type" : "vec4",
+                    "offset" : 96
+                },
+                {
+                    "name" : "sunMvp",
+                    "type" : "mat4",
+                    "offset" : 112,
+                    "matrix_stride" : 16
+                },
+                {
+                    "name" : "dynamics",
+                    "type" : "vec4",
+                    "offset" : 176
+                },
+                {
+                    "name" : "raster",
+                    "type" : "vec4",
+                    "offset" : 192
+                },
+                {
+                    "name" : "rayX",
+                    "type" : "vec4",
+                    "offset" : 208
+                },
+                {
+                    "name" : "rayY",
+                    "type" : "vec4",
+                    "offset" : 224
+                },
+                {
+                    "name" : "rayZ",
+                    "type" : "vec4",
+                    "offset" : 240
+                },
+                {
+                    "name" : "riderState",
+                    "type" : "vec4",
+                    "array" : [
+                        4
+                    ],
+                    "array_size_is_literal" : [
+                        true
+                    ],
+                    "offset" : 256,
+                    "array_stride" : 16
+                },
+                {
+                    "name" : "cloth",
+                    "type" : "vec4",
+                    "array" : [
+                        4
+                    ],
+                    "array_size_is_literal" : [
+                        true
+                    ],
+                    "offset" : 320,
+                    "array_stride" : 16
+                }
+            ]
+        }
+    },
+    "inputs" : [
+        {
+            "type" : "vec3",
+            "name" : "in.var.TEXCOORD0",
+            "location" : 0
+        },
+        {
+            "type" : "vec3",
+            "name" : "in.var.TEXCOORD1",
+            "location" : 1
+        },
+        {
+            "type" : "vec3",
+            "name" : "in.var.TEXCOORD2",
+            "location" : 2
+        },
+        {
+            "type" : "vec3",
+            "name" : "in.var.TEXCOORD3",
+            "location" : 3
+        },
+        {
+            "type" : "vec2",
+            "name" : "in.var.TEXCOORD4",
+            "location" : 4
+        },
+        {
+            "type" : "float",
+            "name" : "in.var.TEXCOORD5",
+            "location" : 5
+        }
+    ],
+    "outputs" : [
+        {
+            "type" : "vec4",
+            "name" : "out.var.SV_Target",
+            "location" : 0
+        }
+    ],
+    "separate_images" : [
+        {
+            "type" : "texture2D",
+            "name" : "riderArt",
+            "set" : 2,
+            "binding" : 0
+        },
+        {
+            "type" : "texture2D",
+            "name" : "pineArt",
+            "set" : 2,
+            "binding" : 1
+        },
+        {
+            "type" : "texture2D",
+            "name" : "valleyArt",
+            "set" : 2,
+            "binding" : 2
+        },
+        {
+            "type" : "texture2D",
+            "name" : "vegetationArt",
+            "set" : 2,
+            "binding" : 3
+        },
+        {
+            "type" : "texture2D",
+            "name" : "asphaltArt",
+            "set" : 2,
+            "binding" : 4
+        },
+        {
+            "type" : "texture2D",
+            "name" : "grassArt",
+            "set" : 2,
+            "binding" : 5
+        },
+        {
+            "type" : "texture2D",
+            "name" : "floraArt",
+            "set" : 2,
+            "binding" : 6
+        },
+        {
+            "type" : "texture2D",
+            "name" : "wallArt",
+            "set" : 2,
+            "binding" : 7
+        },
+        {
+            "type" : "texture2D",
+            "name" : "fallArt",
+            "set" : 2,
+            "binding" : 8
+        },
+        {
+            "type" : "texture2D",
+            "name" : "rockArt",
+            "set" : 2,
+            "binding" : 9
+        },
+        {
+            "type" : "texture2D",
+            "name" : "midgroundArt",
+            "set" : 2,
+            "binding" : 10
+        },
+        {
+            "type" : "texture2D",
+            "name" : "sunDepth",
+            "set" : 2,
+            "binding" : 11
+        },
+        {
+            "type" : "texture2D",
+            "name" : "activeRider",
+            "set" : 2,
+            "binding" : 12
+        },
+        {
+            "type" : "texture2D",
+            "name" : "activeFall",
+            "set" : 2,
+            "binding" : 13
+        },
+        {
+            "type" : "texture2D",
+            "name" : "badgeArt",
+            "set" : 2,
+            "binding" : 14
+        },
+        {
+            "type" : "texture2D",
+            "name" : "parkingArt",
+            "set" : 2,
+            "binding" : 15
+        }
+    ],
+    "separate_samplers" : [
+        {
+            "type" : "sampler",
+            "name" : "riderSampler",
+            "set" : 2,
+            "binding" : 0
+        },
+        {
+            "type" : "sampler",
+            "name" : "pineSampler",
+            "set" : 2,
+            "binding" : 1
+        },
+        {
+            "type" : "sampler",
+            "name" : "valleySampler",
+            "set" : 2,
+            "binding" : 2
+        },
+        {
+            "type" : "sampler",
+            "name" : "vegetationSampler",
+            "set" : 2,
+            "binding" : 3
+        },
+        {
+            "type" : "sampler",
+            "name" : "asphaltSampler",
+            "set" : 2,
+            "binding" : 4
+        },
+        {
+            "type" : "sampler",
+            "name" : "grassSampler",
+            "set" : 2,
+            "binding" : 5
+        },
+        {
+            "type" : "sampler",
+            "name" : "floraSampler",
+            "set" : 2,
+            "binding" : 6
+        },
+        {
+            "type" : "sampler",
+            "name" : "wallSampler",
+            "set" : 2,
+            "binding" : 7
+        },
+        {
+            "type" : "sampler",
+            "name" : "fallSampler",
+            "set" : 2,
+            "binding" : 8
+        },
+        {
+            "type" : "sampler",
+            "name" : "rockSampler",
+            "set" : 2,
+            "binding" : 9
+        },
+        {
+            "type" : "sampler",
+            "name" : "midgroundSampler",
+            "set" : 2,
+            "binding" : 10
+        },
+        {
+            "type" : "sampler",
+            "name" : "sunSampler",
+            "set" : 2,
+            "binding" : 11
+        },
+        {
+            "type" : "sampler",
+            "name" : "activeRiderSampler",
+            "set" : 2,
+            "binding" : 12
+        },
+        {
+            "type" : "sampler",
+            "name" : "activeFallSampler",
+            "set" : 2,
+            "binding" : 13
+        },
+        {
+            "type" : "sampler",
+            "name" : "badgeSampler",
+            "set" : 2,
+            "binding" : 14
+        },
+        {
+            "type" : "sampler",
+            "name" : "parkingSampler",
+            "set" : 2,
+            "binding" : 15
+        }
+    ],
+    "ubos" : [
+        {
+            "type" : "_11",
+            "name" : "type.ConstantBuffer.Params",
+            "block_size" : 384,
+            "set" : 3,
+            "binding" : 0
+        }
+    ]
+}

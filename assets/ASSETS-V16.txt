@@ -1,0 +1,30 @@
+DOWNHILL RUSH — assets de la passe 16
+
+Mode de generation : outil image_gen integre a Codex, avec references.
+Les PNG generes sont conserves sans redimensionnement ni retouche par script.
+tools/pack_assets.py ne fait qu'une serialisation RGBA sans perte.
+
+Intro : intro-sky-v16.png, intro-peaks-v16.png, intro-valley-v16.png,
+intro-foreground-v16.png. Quatre images independantes, dont trois transparentes.
+Logos de conduite et arrivee : arcade-badges-v16.png.
+Prompts exacts : intro-and-badges-prompts-v16.json.
+Parking : parking-props-v16.png ; prompt exact : parking-prompt-v16.txt.
+
+Personnages : select-mei-v16.png, rig-mei-v16.png, fall-mei-v16.png,
+rig-rio-v16.png, rig-nox-v16.png. SOL reutilise rider-movement-v2.png.
+La taille des poses de course utilise une seule echelle par personnage.
+Les metadonnees des limites opaques sont dans rig_data.hpp et sprite_data.hpp.
+Prompts des variantes : character-prompts-v16.json et
+intro-and-badges-prompts-v16.json pour la chute de MEI.
+
+Typographie : Bungee Regular (titres), Rajdhani Bold (petits libelles).
+Sources officielles :
+https://github.com/google/fonts/tree/main/ofl/bungee
+https://github.com/google/fonts/tree/main/ofl/rajdhani
+Polices et licences SIL Open Font License conservees dans assets/fonts/.
+Atlas de glyphes genere a la taille de rendu par tools/make_ui_font.py.
+
+Selection finale : select-stage-v16.png (paddock couvert),
+nameplates-v16.png (quatre noms dessines). Prompts exacts :
+select-stage-prompt-v16.txt et nameplate-prompt-v16.txt.
+Pose de course MEI : mei-prompts-v16.json (le premier prompt).

@@ -1,0 +1,48 @@
+{
+  "runtime_assets": [
+    "flora-v4",
+    "masonry-v2",
+    "fall-v1",
+    "panorama-full"
+  ],
+  "prompts": [
+    {
+      "name": "flora-v4",
+      "transparent_background": true,
+      "referenced_image_paths": [
+        "F:\\downhil\\assets\\target-reference.png"
+      ],
+      "prompt": "Create a production-ready PIXEL ART sprite atlas of SIX different isolated alpine roadside plants. Reference image is style reference only. Transparent background with real alpha. Strict 3 columns by 2 rows, large empty separation, each entire object fully contained within its cell. Top row: fern clump with layered feathered fronds, cluster of tiny white wildflowers and rounded olive leaves, a low sprawling dark juniper shrub. Bottom row: young slender birch tree with white bark and sparse olive canopy, dead broken stump with moss and small roots, clump of purple alpine flowers mixed with straw-colored blades. Painted crisp stepped pixel clusters matching vegetation in reference, irregular natural silhouettes and dense overlapping leaves, dark olive shadows warm sunset edge light, no blurry gradients no outlines no cartoon neon. Whole objects front/three-quarter view for vertical game billboards. No ground slab, no detached shadows, no rocks or background scenery, no text. Four plants must differ clearly from grass and pine trees. Each cell has complete plant with empty margins, base near cell bottom."
+    },
+    {
+      "name": "masonry-v2",
+      "transparent_background": false,
+      "prompt": "Seamless repeatable game material texture, orthographic FRONT VIEW of an old Swiss alpine roadside dry stone retaining wall, full image edge-to-edge wall texture only. Rough irregular medium small granite limestone blocks in varied sizes and staggered uneven courses, recessed narrow dark mortar gaps, chipped stone edges, cool grey and warm taupe planes, a few muted olive moss patches. Rich hand painted crisp PIXEL ART suitable for a detailed 960x540 retro modern game, tiny controlled 1-3 pixel brush clusters, nuanced flat limited color palette, not flat rectangular brick grid, no photorealism no blurry gradients no huge pixels. Neutral subdued daylight sunset warmth, no broad cast shadows, no ground sky vegetation or top coping. Seamless on left/right and top/bottom; restrained contrast so seams don't become black outlines."
+    },
+    {
+      "name": "valley-v2",
+      "transparent_background": false,
+      "referenced_image_paths": [
+        "F:\\downhil\\assets\\valley-reference.png"
+      ],
+      "prompt": "Refine this exact game background image while preserving composition, mountain silhouettes, sunset sun position on right, pink orange sky, lake and villages and all landscape proportions. Replace coarse chunky patches with MUCH FINER hand-painted pixel-art detail at native image scale: intricate narrow mountain rock strata, crisp fine snow gullies, delicately stippled far forests, numerous tiny distinct village rooftops and lights, fine lake ripples. Keep clean intentional tiny 1-2 pixel clusters rather than huge blocks or blur; high-end 32-bit painted game panorama. No foreground road or rail, no people, no text or HUD. Preserve the calm muted violet mountains, slate lake, warm yellow pink sun, and olive green hills. Complete full-bleed landscape same wide ratio. This is an edit of the entire existing panorama to harmonize its detail scale with finer game sprites."
+    },
+    {
+      "name": "fall-v1",
+      "prompt": "Using the reference solely for exact character appearance and painted pixel-art style, make a transparent game sprite atlas of THREE fall animation frames in a single horizontal row, equal cells separated by generous transparent gutters. Same adult longboard rider: black and white helmet, loose off-white tee shirt, charcoal knee-length shorts, black gloves, burgundy-white trainers. Camera behind the rider and slightly above, compatible with the reference chase view. Frame 1 left: losing balance off the longboard, torso sideways, one arm reaching out and one leg airborne, knees bent. Frame 2 center: tumbling low with shoulder close to ground, both legs bent, compact protective roll. Frame 3 right: lying on side at rest on ground, knees bent, helmet on, one glove planted ready to stand. No injury blood or facial details. NO skateboard in any of the three poses. Entire bodies visible in each cell. Real transparent alpha background, no glow, no ground plane, no shadows, no text. Crisp hand-painted pixel clusters matching reference character, fine detailed cloth folds, hard pixel edges, consistent sunset lighting. Distinct readable silhouettes. Wide sprite atlas."
+    },
+    {
+      "name": "panorama-east",
+      "prompt": "Create the adjoining EAST-facing 120-degree view of this same Swiss alpine valley at sunset for a rotating 360-degree game panorama. Style reference: attached refined pixel art landscape. The reference view looks north toward a lake with sunset on the right; this new view faces 120 degrees clockwise away from that view. NO visible sun in this view. Show a spacious hazy purple mountain valley, distant forest slopes and small alpine hamlets, with a portion of the lake on the left disappearing behind a headland, warmer dusky pink-orange sky on left, cooler mauve sky on right. Horizon near mid height, high peaks in the upper third, distant foothills in lower half. No foreground road, railing, trees close to camera, skater or HUD. Entire scene is distant panorama, open airy large scale and nuanced atmospheric layers. Full bleed wide 16:9 frame. Use fine crisp painted PIXEL ART at 1-2 pixel detail scale like the reference, many tiny rocks and roof details, no coarse pixel enlargement, no photorealism or blurry gradients. This must harmonize with the reference when shown in a game camera rotating into the next direction."
+    },
+    {
+      "name": "panorama-west",
+      "prompt": "Create the adjoining WEST/SOUTH-facing 120-degree view of this same Swiss alpine valley at sunset for a rotating 360-degree game panorama. Style reference: attached refined pixel art landscape. This new view faces 240 degrees clockwise away from the reference. NO visible sun in this view. Show a grand receding chain of muted violet and blue alpine summits, a broad open valley floor with winding river, farm clearings and tiny hamlets, dark distant forested hills at bottom, pink-mauve sky with thin warm clouds. Horizon near mid height, peaks upper third, land lower half. The right edge returns toward the lake valley of the reference. No foreground road railing or close trees, skater or HUD. Airy panoramic distance with detailed rock strata and snow gullies, many subtle depth layers. Full bleed wide 16:9 frame. Fine crisp painted PIXEL ART, small 1-2 pixel clusters at native resolution like the reference. Restrained warm/cool palette, not coarse enlarged pixels, not photorealistic. Harmonize style and sky colors with the reference for game camera rotation."
+    },
+    {
+      "name": "panorama-full",
+      "prompt": "Create ONE CONTINUOUS 360-degree CYLINDRICAL PANORAMA for the distant environment of an alpine downhill pixel-art game. Output an ultra-wide panoramic strip 3840 by 1280 pixels (3:1 aspect ratio). Use supplied image only as style/color reference, not as a framing constraint. The panorama must show a single coherent connected Alpine landscape across the entire width: forested mountain valleys, violet snowy ranges, a connected blue lake in one portion, a winding river and tiny hamlets elsewhere. Camera stands high above a Swiss valley. Pink orange sunset sky, exactly one small pale yellow sun located about one quarter from left. Sky occupies upper 35 percent, mountain skyline near 35-45 percent height, distant valley terrain and lake lower half. Left and right edges must join seamlessly into each other in sky color, cloud lines and forested hills (no sun or major peak near seam). Very broad vista, not a normal camera view stretched wider. No panel divisions, no montage, no separate views, no foreground road, trees close to camera, railings, person or text. High-end painted PIXEL ART using tiny 1-2 pixel clusters at this large native resolution, finely detailed cliff strata, roofs and treetops, subtle atmospheric blue haze separating ridges, no giant pixel blocks, no blur or photorealism. Keep relief gently varied and open so mountains fit within the frame rather than being cut off. Continuity across the strip matters more than copying any exact mountain from reference."
+    }
+  ],
+  "notes": "Generated using image_gen. Original PNG pixels/alpha preserved; runtime assets serialized losslessly. valley-v2, panorama-east and panorama-west are intermediate explorations and are not loaded in the final runtime. The final panorama is actually 2172x724, not the requested 3840x1280."
+}

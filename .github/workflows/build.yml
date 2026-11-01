@@ -1,0 +1,43 @@
+name: Build and test
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned toolchain
+        shell: pwsh
+        run: ./setup.ps1
+      - name: Build and run CPU tests
+        shell: pwsh
+        run: ./build.ps1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Audit repository and create Windows package
+        run: |
+          python tools/check_repository.py
+          python tools/package_windows.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Slidewild-Windows-x64
+          path: |
+            dist/*.zip
+            dist/*.sha256.txt
+  macos:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build ARM64 app and run CPU tests
+        run: bash build-macos.sh
+      - name: Archive app (ad hoc signature, not notarized)
+        run: ditto -c -k --sequesterRsrc --keepParent build-macos/Slidewild.app build-macos/Slidewild-Mac-AppleSilicon.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Slidewild-Mac-AppleSilicon
+          path: build-macos/Slidewild-Mac-AppleSilicon.zip

@@ -1,0 +1,266 @@
+#include <metal_stdlib>
+#include <simd/simd.h>
+
+using namespace metal;
+
+struct shadow_ps_in
+{
+    float3 in_var_TEXCOORD3 [[user(locn3)]];
+    float in_var_TEXCOORD5 [[user(locn5), flat]];
+};
+
+fragment void shadow_ps(shadow_ps_in in [[stage_in]], texture2d<float> pineArt [[texture(1)]], texture2d<float> vegetationArt [[texture(3)]], texture2d<float> grassArt [[texture(5)]], texture2d<float> floraArt [[texture(6)]], texture2d<float> wallArt [[texture(7)]], texture2d<float> fallArt [[texture(8)]], sampler pineSampler [[sampler(1)]], sampler vegetationSampler [[sampler(3)]], sampler grassSampler [[sampler(5)]], sampler floraSampler [[sampler(6)]], sampler wallSampler [[sampler(7)]], sampler fallSampler [[sampler(8)]])
+{
+    bool _88;
+    if ((isunordered(in.in_var_TEXCOORD5, 0.0) || in.in_var_TEXCOORD5 >= 0.0))
+    {
+        bool _87;
+        if (in.in_var_TEXCOORD5 >= 5.0)
+        {
+            _87 = in.in_var_TEXCOORD5 < 5.5;
+        }
+        else
+        {
+            _87 = false;
+        }
+        _88 = _87;
+    }
+    else
+    {
+        _88 = true;
+    }
+    bool _93;
+    if (!_88)
+    {
+        _93 = in.in_var_TEXCOORD5 == 7.0;
+    }
+    else
+    {
+        _93 = true;
+    }
+    bool _98;
+    if (!_93)
+    {
+        _98 = in.in_var_TEXCOORD5 == 14.0;
+    }
+    else
+    {
+        _98 = true;
+    }
+    bool _107;
+    if (!_98)
+    {
+        bool _106;
+        if (in.in_var_TEXCOORD5 >= 11.0)
+        {
+            _106 = in.in_var_TEXCOORD5 < 12.0;
+        }
+        else
+        {
+            _106 = false;
+        }
+        _107 = _106;
+    }
+    else
+    {
+        _107 = true;
+    }
+    bool _112;
+    if (!_107)
+    {
+        _112 = in.in_var_TEXCOORD5 == 19.0;
+    }
+    else
+    {
+        _112 = true;
+    }
+    bool _121;
+    if (!_112)
+    {
+        bool _120;
+        if (in.in_var_TEXCOORD5 >= 22.0)
+        {
+            _120 = in.in_var_TEXCOORD5 < 29.0;
+        }
+        else
+        {
+            _120 = false;
+        }
+        _121 = _120;
+    }
+    else
+    {
+        _121 = true;
+    }
+    if (_121)
+    {
+        discard_fragment();
+    }
+    bool _128;
+    if (in.in_var_TEXCOORD5 >= 29.0)
+    {
+        _128 = in.in_var_TEXCOORD5 < 29.5;
+    }
+    else
+    {
+        _128 = false;
+    }
+    if (_128)
+    {
+        if ((vegetationArt.sample(vegetationSampler, in.in_var_TEXCOORD3.xy).w - 0.699999988079071044921875) < 0.0)
+        {
+            discard_fragment();
+        }
+    }
+    bool _144;
+    if (in.in_var_TEXCOORD5 >= 32.0)
+    {
+        _144 = in.in_var_TEXCOORD5 < 32.5;
+    }
+    else
+    {
+        _144 = false;
+    }
+    if (_144)
+    {
+        if ((pineArt.sample(pineSampler, in.in_var_TEXCOORD3.xy).w - 0.699999988079071044921875) < 0.0)
+        {
+            discard_fragment();
+        }
+    }
+    bool _160;
+    if (in.in_var_TEXCOORD5 >= 33.0)
+    {
+        _160 = in.in_var_TEXCOORD5 < 33.5;
+    }
+    else
+    {
+        _160 = false;
+    }
+    if (_160)
+    {
+        if ((fallArt.sample(fallSampler, in.in_var_TEXCOORD3.xy).w - 0.699999988079071044921875) < 0.0)
+        {
+            discard_fragment();
+        }
+    }
+    bool _176;
+    if (in.in_var_TEXCOORD5 >= 35.0)
+    {
+        _176 = in.in_var_TEXCOORD5 < 35.5;
+    }
+    else
+    {
+        _176 = false;
+    }
+    if (_176)
+    {
+        if ((floraArt.sample(floraSampler, in.in_var_TEXCOORD3.xy).w - 0.7200000286102294921875) < 0.0)
+        {
+            discard_fragment();
+        }
+    }
+    bool _192;
+    if (in.in_var_TEXCOORD5 != 34.0)
+    {
+        _192 = in.in_var_TEXCOORD5 == 49.0;
+    }
+    else
+    {
+        _192 = true;
+    }
+    bool _201;
+    if (!_192)
+    {
+        bool _200;
+        if (in.in_var_TEXCOORD5 >= 52.0)
+        {
+            _200 = in.in_var_TEXCOORD5 <= 55.0;
+        }
+        else
+        {
+            _200 = false;
+        }
+        _201 = _200;
+    }
+    else
+    {
+        _201 = true;
+    }
+    if (_201)
+    {
+        discard_fragment();
+    }
+    if (in.in_var_TEXCOORD5 == 58.0)
+    {
+        if ((wallArt.sample(wallSampler, in.in_var_TEXCOORD3.xy).w - 0.64999997615814208984375) < 0.0)
+        {
+            discard_fragment();
+        }
+    }
+    bool _220;
+    if (in.in_var_TEXCOORD5 >= 13.0)
+    {
+        _220 = in.in_var_TEXCOORD5 < 13.5;
+    }
+    else
+    {
+        _220 = false;
+    }
+    if (_220)
+    {
+        if ((vegetationArt.sample(vegetationSampler, in.in_var_TEXCOORD3.xy).w - 0.7799999713897705078125) < 0.0)
+        {
+            discard_fragment();
+        }
+    }
+    bool _236;
+    if (in.in_var_TEXCOORD5 >= 20.0)
+    {
+        _236 = in.in_var_TEXCOORD5 < 20.5;
+    }
+    else
+    {
+        _236 = false;
+    }
+    if (_236)
+    {
+        if ((grassArt.sample(grassSampler, in.in_var_TEXCOORD3.xy).w - 0.550000011920928955078125) < 0.0)
+        {
+            discard_fragment();
+        }
+    }
+    bool _252;
+    if (in.in_var_TEXCOORD5 >= 21.0)
+    {
+        _252 = in.in_var_TEXCOORD5 < 21.5;
+    }
+    else
+    {
+        _252 = false;
+    }
+    if (_252)
+    {
+        if ((floraArt.sample(floraSampler, in.in_var_TEXCOORD3.xy).w - 0.839999973773956298828125) < 0.0)
+        {
+            discard_fragment();
+        }
+    }
+    bool _268;
+    if (in.in_var_TEXCOORD5 >= 6.0)
+    {
+        _268 = in.in_var_TEXCOORD5 < 6.5;
+    }
+    else
+    {
+        _268 = false;
+    }
+    if (_268)
+    {
+        if ((pineArt.sample(pineSampler, in.in_var_TEXCOORD3.xy).w - 0.85000002384185791015625) < 0.0)
+        {
+            discard_fragment();
+        }
+    }
+}
+

@@ -1,0 +1,154 @@
+{
+    "entryPoints" : [
+        {
+            "name" : "vs_main",
+            "mode" : "vert"
+        }
+    ],
+    "types" : {
+        "_14" : {
+            "name" : "type.ConstantBuffer.Params",
+            "members" : [
+                {
+                    "name" : "mvp",
+                    "type" : "mat4",
+                    "offset" : 0,
+                    "matrix_stride" : 16
+                },
+                {
+                    "name" : "eye",
+                    "type" : "vec4",
+                    "offset" : 64
+                },
+                {
+                    "name" : "weather",
+                    "type" : "vec4",
+                    "offset" : 80
+                },
+                {
+                    "name" : "camera",
+                    "type" : "vec4",
+                    "offset" : 96
+                },
+                {
+                    "name" : "sunMvp",
+                    "type" : "mat4",
+                    "offset" : 112,
+                    "matrix_stride" : 16
+                },
+                {
+                    "name" : "dynamics",
+                    "type" : "vec4",
+                    "offset" : 176
+                },
+                {
+                    "name" : "raster",
+                    "type" : "vec4",
+                    "offset" : 192
+                },
+                {
+                    "name" : "rayX",
+                    "type" : "vec4",
+                    "offset" : 208
+                },
+                {
+                    "name" : "rayY",
+                    "type" : "vec4",
+                    "offset" : 224
+                },
+                {
+                    "name" : "rayZ",
+                    "type" : "vec4",
+                    "offset" : 240
+                },
+                {
+                    "name" : "riderState",
+                    "type" : "vec4",
+                    "array" : [
+                        4
+                    ],
+                    "array_size_is_literal" : [
+                        true
+                    ],
+                    "offset" : 256,
+                    "array_stride" : 16
+                },
+                {
+                    "name" : "cloth",
+                    "type" : "vec4",
+                    "array" : [
+                        4
+                    ],
+                    "array_size_is_literal" : [
+                        true
+                    ],
+                    "offset" : 320,
+                    "array_stride" : 16
+                }
+            ]
+        }
+    },
+    "inputs" : [
+        {
+            "type" : "vec3",
+            "name" : "in.var.TEXCOORD0",
+            "location" : 0
+        },
+        {
+            "type" : "vec3",
+            "name" : "in.var.TEXCOORD1",
+            "location" : 1
+        },
+        {
+            "type" : "vec3",
+            "name" : "in.var.TEXCOORD2",
+            "location" : 2
+        },
+        {
+            "type" : "vec3",
+            "name" : "in.var.TEXCOORD3",
+            "location" : 3
+        }
+    ],
+    "outputs" : [
+        {
+            "type" : "vec3",
+            "name" : "out.var.TEXCOORD0",
+            "location" : 0
+        },
+        {
+            "type" : "vec3",
+            "name" : "out.var.TEXCOORD1",
+            "location" : 1
+        },
+        {
+            "type" : "vec3",
+            "name" : "out.var.TEXCOORD2",
+            "location" : 2
+        },
+        {
+            "type" : "vec3",
+            "name" : "out.var.TEXCOORD3",
+            "location" : 3
+        },
+        {
+            "type" : "vec2",
+            "name" : "out.var.TEXCOORD4",
+            "location" : 4
+        },
+        {
+            "type" : "float",
+            "name" : "out.var.TEXCOORD5",
+            "location" : 5
+        }
+    ],
+    "ubos" : [
+        {
+            "type" : "_14",
+            "name" : "type.ConstantBuffer.Params",
+            "block_size" : 384,
+            "set" : 1,
+            "binding" : 0
+        }
+    ]
+}

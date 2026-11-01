@@ -1,0 +1,10 @@
+Mode: built-in image_gen. Native raster pixels preserved.
+
+Use case: stylized-concept.
+Asset type: production floor atlas for a premium pixel-art futuristic racing track, inspired by late 1990s anti-gravity racing industrial art direction, original design, no branding.
+An opaque 1536x1024 texture atlas with FOUR EXACT EQUAL VERTICAL COLUMNS (each 384x1024 pixels), no gutters or margin, each depicting a TOP DOWN ORTHOGRAPHIC full-width 9-metre racing surface section, forward direction toward TOP. NO perspective. Flat diffuse albedo, no cast shadows outside object, no sky, no buildings, no vehicles, no UI.
+Column 1: dark slate blue COMPOSITE RACING PLATES, long staggered broad machined panels, small recessed silver seams, shallow traction channels, flush fasteners, inset white edge markings. Technical purpose-built race track, NOT asphalt, NO granular pebbles.
+Column 2: pale silver ceramic-metal racing deck with large flat rectangular sections, recessed dark drainage channels on sides, a few flush vent panels, asymmetric maintenance hatches, calm broad driving surface. No gravel.
+Column 3: ONE extremely bold golden yellow integrated timing pad, a large angular forward geometric chevron and dark oval sensor embedded in the center, heavy navy metal and silver border, small black/yellow warning details, recessed bolts. Absolutely flat safe drivable surface, no bumps, no holes. Upper and lower ends blend to dark navy composite race deck.
+Column 4: long futuristic service straight, slate blue metal/composite central panel with TWO LONG GOLDEN OCHRE strips along sides, a few cream structural bars at ends, dark grippy smooth center with tiny fine anti slip hatch. Flush panels. Not asphalt.
+Crisp beautifully detailed hand-painted pixel art with hard clusters and restrained wear on edges. Large readable engineered shapes first, fine details second. Cool navy, silver, cream, yellow. Rich but not noisy. This is flat texture art to map onto a curved 3D racetrack, not an illustration in perspective. Four columns precisely 384px each across 1536px. No labels, text, logos, copyright marks.

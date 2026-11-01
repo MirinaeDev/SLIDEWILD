@@ -1,0 +1,6 @@
+{
+  "tool": "built-in image_gen",
+  "asset": "cliff-material-v1.png",
+  "actual_dimensions": [1254, 1254],
+  "prompt": "Use case: stylized-concept. Asset type: opaque full-frame rock surface texture for a painterly pixel-art alpine downhill video game. Create a square orthographic close-up continuous natural weathered alpine grey taupe limestone cliff material. Fill EVERY pixel edge to edge with SOLID STONE; no background, no transparency, no isolated boulder silhouette, no perspective, no text. Fine crisp hand-painted pixel clusters, subtle slate grey and warm taupe stone planes, cool muted purple crevices, ochre mineral stains, tiny muted olive lichen in occasional fissures. Irregular fractured strata and broken angular plates at varied scales, no bricks, no geometric grid, no circular rocks, no repeated motifs, no heavy black outlines. Neutral diffuse lighting with understated small crevice shadows only, no strong directional lighting or dramatic deep cavities. Moderate low contrast, detailed painterly texture like sophisticated 1990s arcade pixel artwork, NOT photography or smooth 3D. A uniform dense material sample suitable for world-space mapping across large sculpted solid cliffs. 1536 x 1536."
+}

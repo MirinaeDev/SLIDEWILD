@@ -1,0 +1,47 @@
+SLIDEWILD 0.35 — PLAYER GUIDE
+
+INSTALLATION
+Extract the entire ZIP, then open Slidewild.exe.
+Keep assets, shaders and SDL3.dll beside the executable.
+No compiler, Python or separate SDL installation is needed to play.
+Windows x64 requires a Direct3D 12 / Shader Model 6 compatible GPU and driver.
+The test executable is unsigned. A validated Mac binary is not yet available.
+
+PLAY
+Choose a rider, course, mode and difficulty. The default mode races against
+three AI rivals. Time attack is selectable on the briefing screen: reach
+checkpoints before time runs out to earn more time. All eight courses are open.
+The rolling countdown starts with the rider already moving, then hands over control.
+
+KEYBOARD
+Left / right or A / D: steer and control the turn.
+Up or W: tuck to reduce drag. Down or S: foot brake.
+Space: initiate a slide. Countersteer to recover.
+Too much board angle causes a spinout: brake early and control the slide.
+Escape or P: pause. Escape while paused: resume.
+R: request a restart (confirmation required).
+H: driving help. N: toggle sound. F11: fullscreen.
+
+CONTROLLER
+Left stick: steer. Right trigger: tuck. Left trigger: brake.
+A / bottom face button: slide. Start: pause / resume.
+Menus: D-pad to select, A to confirm, B to go back.
+Briefing: LB / RB selects difficulty. Menus also support the mouse.
+
+RACE RESULTS
+Crossing the finish triggers a coast into the stopping area, then results.
+First place wins; other positions offer a rematch. In time attack, running
+out of time ends the session. Results offer race again, next course,
+select course, and title screen. Leaving from pause never counts as a finish.
+Personal records are not yet saved between launches.
+
+TROUBLESHOOTING
+Send run.log and error.log (if present), course, rider, mode and a description
+of what happened. Normal logs are in %APPDATA%\DamienMiri\Slidewild.
+Automated checks write to their working directory. Include a screenshot.
+Performance and compatibility still need testing on additional computers.
+
+CREDITS
+Damien Miri
+Custom C++ / SDL3 GPU engine.
+Third-party notices are in licenses. Reference game screenshots are not included.
