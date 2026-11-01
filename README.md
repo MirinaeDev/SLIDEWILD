@@ -6,6 +6,13 @@ perspective terrain.
 
 ![SLIDEWILD title screen](docs/images/title.png)
 
+## Download for Windows
+
+[Download SLIDEWILD 0.35 for Windows x64](https://github.com/MirinaeDev/SLIDEWILD/releases/download/v0.35.0/Slidewild-0.35-Windows-x64.zip)
+
+Extract the entire ZIP, then run `Slidewild.exe`. No compiler or installation
+is required. [Release notes and SHA256 checksum](https://github.com/MirinaeDev/SLIDEWILD/releases/tag/v0.35.0).
+
 Eight destinations, four riders, three AI rivals, and a time attack mode.
 Arcade physics includes slopes, grip, carving, slides, foot braking and
 spinouts, with weather, particles and speed-sensitive camera effects.
